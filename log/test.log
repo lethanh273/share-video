@@ -1,0 +1,211 @@
+  [1m[35m (3.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (1.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (7.8ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (1.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (3.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (2.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (2.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (2.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.7ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (3.6ms)[0m  [1m[35mBEGIN[0m
+Started GET "/auth/new" for 127.0.0.1 at 2020-04-22 09:44:22 +0700
+Processing by AuthenticationController#new_session as HTML
+  Rendering authentication/new_session.html.erb within layouts/application
+  Rendered authentication/new_session.html.erb within layouts/application (5.2ms)
+[Webpacker] Compiling…
+  [1m[35m (2.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (4.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (2.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (1.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.7ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (1.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.6ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (1.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (4.6ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (2.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.9ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (14.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (11.6ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (1.8ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`username` = BINARY 'alline@ullrich.co' LIMIT 1[0m
+  [1m[35mSQL (2.9ms)[0m  [1m[32mINSERT INTO `users` (`username`, `password_digest`, `created_at`, `updated_at`) VALUES ('alline@ullrich.co', '$2a$04$RkZHHxHkp/077pc2iQyy4O/752RotNyM7emLdP1iZ1spd/XEMzGMa', '2020-04-22 02:44:25', '2020-04-22 02:44:25')[0m
+  [1m[35m (1.9ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (11.4ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (14.2ms)[0m  [1m[32mINSERT INTO `videos` (`youtube_url`, `created_by`, `created_at`, `updated_at`, `title`, `desc`) VALUES ('https://www.youtube.com/embed/TEEstkKUsGk', 3, '2020-04-22 02:44:25', '2020-04-22 02:44:25', 'Gerard Terry IV', '<󦇓灒 A𵅹䝺󱐘楼𫻪::󗱹D󂲧񨳦TB󹅋󷭝4r󓉒 󕦢寻X񙧂짤麅g')[0m
+  [1m[35m (3.8ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (8.9ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (3.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.7ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (2.9ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`username` = BINARY 'don@rippin.io' LIMIT 1[0m
+  [1m[35mSQL (7.8ms)[0m  [1m[32mINSERT INTO `users` (`username`, `password_digest`, `created_at`, `updated_at`) VALUES ('don@rippin.io', '$2a$04$VhkbV1OaAzTcf.E16H4/tOpptEaCK7LQi2U/fQlrCV09Ha6I4zLza', '2020-04-22 02:44:25', '2020-04-22 02:44:25')[0m
+  [1m[35m (2.8ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (3.9ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (2.4ms)[0m  [1m[32mINSERT INTO `videos` (`youtube_url`, `created_by`, `created_at`, `updated_at`, `title`, `desc`) VALUES ('https://www.youtube.com/embed/TEEstkKUsGk', 4, '2020-04-22 02:44:25', '2020-04-22 02:44:25', 'Monte Turcotte', '󖞏󨢈淥\n#u򼏵Ẃ,ᔖ꘯򕕠2k󙓛WN9$   ๶&?񣊨   $񲑳')[0m
+  [1m[35m (2.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (7.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (3.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.5ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (1.9ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`username` = BINARY 'hoyt@gusikowskikling.biz' LIMIT 1[0m
+  [1m[35mSQL (1.8ms)[0m  [1m[32mINSERT INTO `users` (`username`, `password_digest`, `created_at`, `updated_at`) VALUES ('hoyt@gusikowskikling.biz', '$2a$04$YIv1GQz4rS/9Q0tOEZyYWebw2QKoDGe.FpRt4MU4U9jEOOq8AgtCi', '2020-04-22 02:44:25', '2020-04-22 02:44:25')[0m
+  [1m[35m (1.3ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+[Webpacker] Compiled all packs in /Users/SuperLap/Downloads/video-sharing/public/packs-test
+[Webpacker] Browserslist: caniuse-lite is outdated. Please run next command `yarn upgrade`
+
+  Rendered videos/_form.html.erb (0.9ms)
+Completed 200 OK in 22568ms (Views: 22552.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (3.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (2.0ms)[0m  [1m[32mINSERT INTO `tokens` (`token`, `user_id`, `created_at`, `updated_at`) VALUES ('eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjo1LCJleHAiOjE1ODc2MDk4ODV9.ANaInKQywPfkaY-OraYX5iYhg7jNoyZz8xgRcueLun4', 5, '2020-04-22 02:44:45', '2020-04-22 02:44:45')[0m
+  [1m[35m (3.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (3.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (1.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.8ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (3.5ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`username` = BINARY 'tynisha.stanton@okeefe.io' LIMIT 1[0m
+  [1m[35mSQL (2.6ms)[0m  [1m[32mINSERT INTO `users` (`username`, `password_digest`, `created_at`, `updated_at`) VALUES ('tynisha.stanton@okeefe.io', '$2a$04$es1qcPzoSTlymceTs24IJ.B/v84/152MHHc.2AndckVQCrx2ebKBS', '2020-04-22 02:44:45', '2020-04-22 02:44:45')[0m
+  [1m[35m (2.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.4ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (3.3ms)[0m  [1m[32mINSERT INTO `tokens` (`token`, `user_id`, `created_at`, `updated_at`) VALUES ('eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjo2LCJleHAiOjE1ODc2MDk4ODV9.eG-z6eqV8oZS-mszK6Jrka30FJt2_Jr-RS9iDbrYjcg', 6, '2020-04-22 02:44:45', '2020-04-22 02:44:45')[0m
+  [1m[35m (1.8ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mUser Load (4.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 999999 LIMIT 1[0m
+  [1m[35m (8.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (1.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (1.3ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`username` = BINARY 'andrew_romaguera@sauer.biz' LIMIT 1[0m
+  [1m[35mSQL (2.2ms)[0m  [1m[32mINSERT INTO `users` (`username`, `password_digest`, `created_at`, `updated_at`) VALUES ('andrew_romaguera@sauer.biz', '$2a$04$voDGDFbjL7PQtGxF5itrMeBKLHFOgMwcOYPWW2rUH9d5f05nOifaa', '2020-04-22 02:44:45', '2020-04-22 02:44:45')[0m
+  [1m[35m (1.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (2.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (2.1ms)[0m  [1m[32mINSERT INTO `tokens` (`token`, `user_id`, `created_at`, `updated_at`) VALUES ('eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjo3LCJleHAiOjE1ODc2MDk4ODV9.YR5u8tb5c6v7PQoAJyw8CY_cEJfVqP2vxNNHGpQUOc8', 7, '2020-04-22 02:44:45', '2020-04-22 02:44:45')[0m
+  [1m[35m (1.5ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (7.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (1.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.5ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (2.7ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`username` = BINARY 'wilbert@oreilly.info' LIMIT 1[0m
+  [1m[35mSQL (1.5ms)[0m  [1m[32mINSERT INTO `users` (`username`, `password_digest`, `created_at`, `updated_at`) VALUES ('wilbert@oreilly.info', '$2a$04$s0RX0QYKgGN502NiJwPv2eEfXorWhPIlSX3nri2nOKsx.yMy0L6na', '2020-04-22 02:44:45', '2020-04-22 02:44:45')[0m
+  [1m[35m (1.9ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (4.5ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`username` = BINARY 'wilbert@oreilly.info' AND (`users`.`id` != 8) LIMIT 1[0m
+  [1m[35m (3.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (1.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (1.4ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`username` = BINARY 'humberto@goyette.name' LIMIT 1[0m
+  [1m[35mSQL (1.7ms)[0m  [1m[32mINSERT INTO `users` (`username`, `password_digest`, `created_at`, `updated_at`) VALUES ('humberto@goyette.name', '$2a$04$kIM/KUcaGc/LL1WAgEB.5e3/OTGeppngVp9WW/CGTwnM2vy3onavS', '2020-04-22 02:44:45', '2020-04-22 02:44:45')[0m
+  [1m[35m (1.3ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (2.8ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`username` IS NULL AND (`users`.`id` != 9) LIMIT 1[0m
+  [1m[35m (3.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (1.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.6ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (1.6ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`username` = BINARY 'lisandra@haley.net' LIMIT 1[0m
+  [1m[35mSQL (2.2ms)[0m  [1m[32mINSERT INTO `users` (`username`, `password_digest`, `created_at`, `updated_at`) VALUES ('lisandra@haley.net', '$2a$04$v.G17fL.zJWuyVF2/A596OQ8sa.iE8SGthCNcAZXHa98a51aZJvWi', '2020-04-22 02:44:45', '2020-04-22 02:44:45')[0m
+  [1m[35m (1.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (3.6ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`username` = BINARY 'lisandra@haley.net' LIMIT 1[0m
+  [1m[35m (4.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (1.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (1.5ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`username` = BINARY 'lloyd@willmslangworth.info' LIMIT 1[0m
+  [1m[35mSQL (1.4ms)[0m  [1m[32mINSERT INTO `users` (`username`, `password_digest`, `created_at`, `updated_at`) VALUES ('lloyd@willmslangworth.info', '$2a$04$2WKqlDrGYLMbmqXgQuFVFOgD1yaVKOf166JW5Rw44VVwmLoOrp3bO', '2020-04-22 02:44:45', '2020-04-22 02:44:45')[0m
+  [1m[35m (1.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (1.6ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`username` = BINARY 'lloyd@willmslangworth.info' AND (`users`.`id` != 11) LIMIT 1[0m
+  [1m[35m (3.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (1.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (1.3ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`username` = BINARY 'marlon@lind.info' LIMIT 1[0m
+  [1m[35mSQL (1.5ms)[0m  [1m[32mINSERT INTO `users` (`username`, `password_digest`, `created_at`, `updated_at`) VALUES ('marlon@lind.info', '$2a$04$o4dvMbW9odsFro4LwGnMSOH0JS/IWlR8P6TAYDTi8r8Oz/SODnOCu', '2020-04-22 02:44:45', '2020-04-22 02:44:45')[0m
+  [1m[35m (1.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (1.7ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`username` = BINARY 'marlon@lind.info' AND (`users`.`id` != 12) LIMIT 1[0m
+  [1m[35m (3.0ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (1.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.5ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (2.2ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`username` = BINARY 'armand@lebsack.org' LIMIT 1[0m
+  [1m[35mSQL (3.9ms)[0m  [1m[32mINSERT INTO `users` (`username`, `password_digest`, `created_at`, `updated_at`) VALUES ('armand@lebsack.org', '$2a$04$Szg362BXBjUVNRmqiGq1B.UpdauPPxtpbTO6ySofUnScomulFr4tu', '2020-04-22 02:44:45', '2020-04-22 02:44:45')[0m
+  [1m[35m (1.9ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (4.4ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`username` = BINARY 'armand@lebsack.org' AND (`users`.`id` != 13) LIMIT 1[0m
+  [1m[35m (15.8ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (1.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (1.5ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`username` = BINARY 'lizbeth_stehr@prosacco.biz' LIMIT 1[0m
+  [1m[35mSQL (4.1ms)[0m  [1m[32mINSERT INTO `users` (`username`, `password_digest`, `created_at`, `updated_at`) VALUES ('lizbeth_stehr@prosacco.biz', '$2a$04$WXhVLIKQ55tRbCxEt.H24unihLFdYu1luHMb4jAUEwyXxer5iqMK2', '2020-04-22 02:44:45', '2020-04-22 02:44:45')[0m
+  [1m[35m (1.3ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.4ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.6ms)[0m  [1m[32mINSERT INTO `videos` (`youtube_url`, `created_by`, `created_at`, `updated_at`, `title`, `desc`) VALUES ('https://www.youtube.com/embed/TEEstkKUsGk', 14, '2020-04-22 02:44:45', '2020-04-22 02:44:45', 'Dr. Chara O\'Keefe', 'NMG-WX  /󄵀⋨4ꩬ쾕-򸍑桞蹌KPQ8 E󣘚/ఎ󩨫R򧠳')[0m
+  [1m[35m (1.3ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (3.5ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.5ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (1.6ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`username` = BINARY 'maxine@emmerich.name' LIMIT 1[0m
+  [1m[35mSQL (1.5ms)[0m  [1m[32mINSERT INTO `users` (`username`, `password_digest`, `created_at`, `updated_at`) VALUES ('maxine@emmerich.name', '$2a$04$Ql6olt.YgMVBCGrigftPUey4VqKXta5rbOq07bupRIuiK/Miy1cYy', '2020-04-22 02:44:45', '2020-04-22 02:44:45')[0m
+  [1m[35m (1.5ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.5ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (7.6ms)[0m  [1m[32mINSERT INTO `videos` (`youtube_url`, `created_by`, `created_at`, `updated_at`, `title`, `desc`) VALUES ('https://www.youtube.com/embed/TEEstkKUsGk', 15, '2020-04-22 02:44:45', '2020-04-22 02:44:45', 'Mr. Tula Berge', '𰕒򑽥W2򖴤  \n 8L򖵩󜶇쉫 MQ 6 uA/  𦀽T򖄍 (􆊎 ')[0m
+  [1m[35m (4.0ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (2.7ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.6ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (3.0ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`username` = BINARY 'mireille_moen@corwin.biz' LIMIT 1[0m
+  [1m[35mSQL (2.6ms)[0m  [1m[32mINSERT INTO `users` (`username`, `password_digest`, `created_at`, `updated_at`) VALUES ('mireille_moen@corwin.biz', '$2a$04$mXpypX5mMWPCkiATtiTjOO84ZdQoIGnaqZU1xqHJzGxpVkyq0Z5WW', '2020-04-22 02:44:45', '2020-04-22 02:44:45')[0m
+  [1m[35m (12.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (2.1ms)[0m  [1m[32mINSERT INTO `videos` (`youtube_url`, `created_by`, `created_at`, `updated_at`, `title`, `desc`) VALUES ('https://www.youtube.com/embed/TEEstkKUsGk', 16, '2020-04-22 02:44:45', '2020-04-22 02:44:45', 'Mitchel Hauck', '<󬃋#@I콟󂅈痙ᡚ.* .U񻰧󨊬 F逯&#7L4竻0౪顝𭤜鏙񣔫N')[0m
+  [1m[35m (2.4ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (6.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (1.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (2.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (1.6ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`username` = BINARY 'asuncion.maggio@ziemestamm.com' LIMIT 1[0m
+  [1m[35mSQL (2.3ms)[0m  [1m[32mINSERT INTO `users` (`username`, `password_digest`, `created_at`, `updated_at`) VALUES ('asuncion.maggio@ziemestamm.com', '$2a$04$T5z7TyV0brQyfxiLKt9KM.6LUoyXA.vkJG5lfAvfhvj25R8hy7xqy', '2020-04-22 02:44:45', '2020-04-22 02:44:45')[0m
+  [1m[35m (1.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.9ms)[0m  [1m[32mINSERT INTO `videos` (`youtube_url`, `created_by`, `created_at`, `updated_at`, `title`, `desc`) VALUES ('https://www.youtube.com/embed/TEEstkKUsGk', 17, '2020-04-22 02:44:45', '2020-04-22 02:44:45', 'Mrs. Buster Armstrong', 'Ar= 򤊕򪦅񳬕  ^a(  򋗯   Q뻿4   鬹 0 㻷 򸖁A')[0m
+  [1m[35m (1.4ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (7.0ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (1.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.8ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (5.5ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`username` = BINARY 'lane@pagacbosco.io' LIMIT 1[0m
+  [1m[35mSQL (1.6ms)[0m  [1m[32mINSERT INTO `users` (`username`, `password_digest`, `created_at`, `updated_at`) VALUES ('lane@pagacbosco.io', '$2a$04$IWJw.9HUKnhf7oncKg/1Jupo4MjOwtephvLLXpCoeirgQFvi5TPhO', '2020-04-22 02:44:45', '2020-04-22 02:44:45')[0m
+  [1m[35m (2.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.7ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (4.4ms)[0m  [1m[32mINSERT INTO `videos` (`youtube_url`, `created_by`, `created_at`, `updated_at`, `title`, `desc`) VALUES ('https://www.youtube.com/embed/TEEstkKUsGk', 18, '2020-04-22 02:44:45', '2020-04-22 02:44:45', 'Darcie Feest', '𐱽󸾝󦶙㍙\'䘒90SPN智򣳥J󥎛񅾺념/0삄 6଍𖠙󭢝\\絨꿢쒧῀񃔵=')[0m
+  [1m[35m (2.7ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (10.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (1.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (1.4ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`username` = BINARY 'hank_gaylord@daniel.org' LIMIT 1[0m
+  [1m[35mSQL (1.4ms)[0m  [1m[32mINSERT INTO `users` (`username`, `password_digest`, `created_at`, `updated_at`) VALUES ('hank_gaylord@daniel.org', '$2a$04$ZcEEZ1ZT4aymr4b4N95NcekWLYHmqXvpnfo2BnQPz/v0b8tzlqjUa', '2020-04-22 02:44:45', '2020-04-22 02:44:45')[0m
+  [1m[35m (1.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.6ms)[0m  [1m[32mINSERT INTO `videos` (`youtube_url`, `created_by`, `created_at`, `updated_at`, `title`, `desc`) VALUES ('https://www.youtube.com/embed/TEEstkKUsGk', 19, '2020-04-22 02:44:46', '2020-04-22 02:44:46', 'Aracelis Turcotte', ' 򴖭 鎓곖H  챢᫖B󆸧 !3󎞘 黡 ;st TX7 WX靮')[0m
+  [1m[35m (1.9ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (3.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (1.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.8ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (1.6ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`username` = BINARY 'hector@sanfordsimonis.biz' LIMIT 1[0m
+  [1m[35mSQL (1.4ms)[0m  [1m[32mINSERT INTO `users` (`username`, `password_digest`, `created_at`, `updated_at`) VALUES ('hector@sanfordsimonis.biz', '$2a$04$IlMHYWKPZDG/JOEX8fkVceIEg.zeROshycx7ER9z/g0N3koJhl71S', '2020-04-22 02:44:46', '2020-04-22 02:44:46')[0m
+  [1m[35m (1.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.4ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.9ms)[0m  [1m[32mINSERT INTO `videos` (`youtube_url`, `created_by`, `created_at`, `updated_at`, `title`, `desc`) VALUES ('https://www.youtube.com/embed/TEEstkKUsGk', 20, '2020-04-22 02:44:46', '2020-04-22 02:44:46', 'Mr. Pandora Crist', '8s񒥥镨ɴ4&1򱤘񑍭Y迦 񮙭헔懔쾢O򾔂\r 쥎󈖔b񦃿󟾰4􊶂񖽺(<')[0m
+  [1m[35m (2.6ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (3.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (1.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (1.2ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`username` = BINARY 'oda@hickle.co' LIMIT 1[0m
+  [1m[35mSQL (2.3ms)[0m  [1m[32mINSERT INTO `users` (`username`, `password_digest`, `created_at`, `updated_at`) VALUES ('oda@hickle.co', '$2a$04$7cWuFS5e52UMQfYSgyeG6.q8YTwlyOCs1n/d7bowCvJVjSWm9FGg6', '2020-04-22 02:44:46', '2020-04-22 02:44:46')[0m
+  [1m[35m (1.4ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.6ms)[0m  [1m[32mINSERT INTO `videos` (`youtube_url`, `created_by`, `created_at`, `updated_at`, `title`, `desc`) VALUES ('https://www.youtube.com/embed/TEEstkKUsGk', 21, '2020-04-22 02:44:46', '2020-04-22 02:44:46', 'Rosa Howe', '򄾓򑳽  𛰞ꅼ󅱕DࡻYUQR ęK愢񝬊8Th &𓙄挆 򮠲O   ')[0m
+  [1m[35m (1.3ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (7.6ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (1.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (1.7ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`username` = BINARY 'neville@wisokygreen.org' LIMIT 1[0m
+  [1m[35mSQL (1.6ms)[0m  [1m[32mINSERT INTO `users` (`username`, `password_digest`, `created_at`, `updated_at`) VALUES ('neville@wisokygreen.org', '$2a$04$1xuu/1QE57cDmuk1n.a1nee1/IVFvmJfXmvX6hEM1Df60xUahaGJC', '2020-04-22 02:44:46', '2020-04-22 02:44:46')[0m
+  [1m[35m (4.4ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (3.4ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (3.2ms)[0m  [1m[32mINSERT INTO `videos` (`youtube_url`, `created_by`, `created_at`, `updated_at`, `title`, `desc`) VALUES ('https://www.youtube.com/embed/TEEstkKUsGk', 22, '2020-04-22 02:44:46', '2020-04-22 02:44:46', 'Linn Schowalter', '󙈏褗k:򎒳 ᱭ隽򶨏󄭉B񺐪 Lຼ<!񣳎濱🗄ᐺ񤮃򈡭  w -& 񷏠')[0m
+  [1m[35m (1.5ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (3.7ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (1.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (1.6ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`username` = BINARY 'isaac@kunze.org' LIMIT 1[0m
+  [1m[35mSQL (3.0ms)[0m  [1m[32mINSERT INTO `users` (`username`, `password_digest`, `created_at`, `updated_at`) VALUES ('isaac@kunze.org', '$2a$04$7Z3lmATbtDqiu8RldIzNVusHOI52ht0O5JyzOTXPn929/4OBorXfy', '2020-04-22 02:44:46', '2020-04-22 02:44:46')[0m
+  [1m[35m (1.7ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.5ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.5ms)[0m  [1m[32mINSERT INTO `videos` (`youtube_url`, `created_by`, `created_at`, `updated_at`, `title`, `desc`) VALUES ('https://www.youtube.com/embed/TEEstkKUsGk', 23, '2020-04-22 02:44:46', '2020-04-22 02:44:46', 'Mrs. Loreen Hirthe', 'l񫺵  ;򇣖򻵪𞒗:䳬𠫬􁖧3g쬧\' 吱 򎷌B򶧡\Z𺕲!J|뒉ࢁ򹑬맭')[0m
+  [1m[35m (1.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (3.5ms)[0m  [1m[31mROLLBACK[0m

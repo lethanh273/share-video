@@ -1,0 +1,19 @@
+{
+  "application.js": "/packs/js/application-9d1a5eb9f6c184cba238.js",
+  "application.js.map": "/packs/js/application-9d1a5eb9f6c184cba238.js.map",
+  "entrypoints": {
+    "application": {
+      "js": [
+        "/packs/js/application-9d1a5eb9f6c184cba238.js"
+      ],
+      "js.map": [
+        "/packs/js/application-9d1a5eb9f6c184cba238.js.map"
+      ]
+    }
+  },
+  "media/fonts/fontawesome-webfont.eot?v=4.7.0": "/packs/media/fonts/fontawesome-webfont-674f50d2.eot",
+  "media/fonts/fontawesome-webfont.svg?v=4.7.0": "/packs/media/fonts/fontawesome-webfont-912ec66d.svg",
+  "media/fonts/fontawesome-webfont.ttf?v=4.7.0": "/packs/media/fonts/fontawesome-webfont-b06871f2.ttf",
+  "media/fonts/fontawesome-webfont.woff2?v=4.7.0": "/packs/media/fonts/fontawesome-webfont-af7ae505.woff2",
+  "media/fonts/fontawesome-webfont.woff?v=4.7.0": "/packs/media/fonts/fontawesome-webfont-fee66e71.woff"
+}
