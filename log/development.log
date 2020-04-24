@@ -805,3 +805,76 @@ Processing by VideosController#index as HTML
 Completed 200 OK in 315ms (Views: 113.5ms | ActiveRecord: 182.4ms)
 
 
+Started GET "/" for 127.0.0.1 at 2020-04-24 23:25:44 +0700
+  [1m[35m (4.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by VideosController#index as HTML
+  [1m[36mToken Load (4.0ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" WHERE "tokens"."token" = $1 LIMIT $2[0m  [["token", "eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE1ODc4MjQ0ODB9.orUUvh0ULNOYmO6mAbpucCr6XOfIeWyEjJCNwqvMDnQ"], ["LIMIT", 1]]
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering videos/index.html.erb within layouts/application
+  [1m[36mVideo Load (6.8ms)[0m  [1m[34mSELECT "videos".* FROM "videos" ORDER BY "videos"."created_at" ASC[0m
+  Rendered videos/_show.html.erb (1.6ms)
+  Rendered videos/index.html.erb within layouts/application (60.2ms)
+Completed 500 Internal Server Error in 211ms (ActiveRecord: 51.4ms)
+
+
+  
+SyntaxError (/Users/SuperLap/Downloads/share-video/app/views/videos/_show.html.erb:31: unknown regexp options - dv
+/Users/SuperLap/Downloads/share-video/app/views/videos/_show.html.erb:32: syntax error, unexpected '<'
+</div>
+^
+/Users/SuperLap/Downloads/share-video/app/views/videos/_show.html.erb:37: unterminated regexp meets end of file
+          end
+             ^
+/Users/SuperLap/Downloads/share-video/app/views/videos/_show.html.erb:37: syntax error, unexpected end-of-input, expecting ')'
+          end
+             ^):
+  
+app/views/videos/_show.html.erb:31: unknown regexp options - dv
+app/views/videos/_show.html.erb:32: syntax error, unexpected '<'
+app/views/videos/_show.html.erb:37: unterminated regexp meets end of file
+app/views/videos/_show.html.erb:37: syntax error, unexpected end-of-input, expecting ')'
+app/views/videos/index.html.erb:5:in `block in _app_views_videos_index_html_erb___1193646357456844967_70279812435340'
+app/views/videos/index.html.erb:4:in `_app_views_videos_index_html_erb___1193646357456844967_70279812435340'
+Started GET "/" for 127.0.0.1 at 2020-04-24 23:26:18 +0700
+Processing by VideosController#index as HTML
+  [1m[36mToken Load (14.3ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" WHERE "tokens"."token" = $1 LIMIT $2[0m  [["token", "eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE1ODc4MjQ0ODB9.orUUvh0ULNOYmO6mAbpucCr6XOfIeWyEjJCNwqvMDnQ"], ["LIMIT", 1]]
+  [1m[36mUser Load (13.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering videos/index.html.erb within layouts/application
+  [1m[36mVideo Load (36.9ms)[0m  [1m[34mSELECT "videos".* FROM "videos" ORDER BY "videos"."created_at" ASC[0m
+  [1m[36mVote Load (2.4ms)[0m  [1m[34mSELECT "votes".* FROM "votes" WHERE "votes"."video_id" = $1 AND "votes"."user_id" = $2 AND "votes"."like" = $3[0m  [["video_id", 1], ["user_id", 1], ["like", "t"]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (18.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "votes" WHERE "votes"."video_id" = $1 AND "votes"."like" = $2[0m  [["video_id", 1], ["like", "t"]]
+  [1m[35m (8.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "votes" WHERE "votes"."video_id" = $1 AND "votes"."like" = $2[0m  [["video_id", 1], ["like", "f"]]
+  Rendered videos/_show.html.erb (312.9ms)
+  [1m[36mVote Load (15.1ms)[0m  [1m[34mSELECT "votes".* FROM "votes" WHERE "votes"."video_id" = $1 AND "votes"."user_id" = $2 AND "votes"."like" = $3[0m  [["video_id", 2], ["user_id", 1], ["like", "t"]]
+  [1m[36mVote Load (3.0ms)[0m  [1m[34mSELECT "votes".* FROM "votes" WHERE "votes"."video_id" = $1 AND "votes"."user_id" = $2 AND "votes"."like" = $3[0m  [["video_id", 2], ["user_id", 1], ["like", "f"]]
+  [1m[36mCACHE User Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (14.7ms)[0m  [1m[34mSELECT COUNT(*) FROM "votes" WHERE "votes"."video_id" = $1 AND "votes"."like" = $2[0m  [["video_id", 2], ["like", "t"]]
+  [1m[35m (25.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "votes" WHERE "votes"."video_id" = $1 AND "votes"."like" = $2[0m  [["video_id", 2], ["like", "f"]]
+  Rendered videos/_show.html.erb (76.4ms)
+  [1m[36mVote Load (8.4ms)[0m  [1m[34mSELECT "votes".* FROM "votes" WHERE "votes"."video_id" = $1 AND "votes"."user_id" = $2 AND "votes"."like" = $3[0m  [["video_id", 3], ["user_id", 1], ["like", "t"]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (2.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "votes" WHERE "votes"."video_id" = $1 AND "votes"."like" = $2[0m  [["video_id", 3], ["like", "t"]]
+  [1m[35m (3.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "votes" WHERE "votes"."video_id" = $1 AND "votes"."like" = $2[0m  [["video_id", 3], ["like", "f"]]
+  Rendered videos/_show.html.erb (22.6ms)
+  [1m[36mVote Load (3.4ms)[0m  [1m[34mSELECT "votes".* FROM "votes" WHERE "votes"."video_id" = $1 AND "votes"."user_id" = $2 AND "votes"."like" = $3[0m  [["video_id", 4], ["user_id", 1], ["like", "t"]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (11.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "votes" WHERE "votes"."video_id" = $1 AND "votes"."like" = $2[0m  [["video_id", 4], ["like", "t"]]
+  [1m[35m (2.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "votes" WHERE "votes"."video_id" = $1 AND "votes"."like" = $2[0m  [["video_id", 4], ["like", "f"]]
+  Rendered videos/_show.html.erb (81.8ms)
+  [1m[36mVote Load (4.9ms)[0m  [1m[34mSELECT "votes".* FROM "votes" WHERE "votes"."video_id" = $1 AND "votes"."user_id" = $2 AND "votes"."like" = $3[0m  [["video_id", 5], ["user_id", 1], ["like", "t"]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT COUNT(*) FROM "votes" WHERE "votes"."video_id" = $1 AND "votes"."like" = $2[0m  [["video_id", 5], ["like", "t"]]
+  [1m[35m (8.7ms)[0m  [1m[34mSELECT COUNT(*) FROM "votes" WHERE "votes"."video_id" = $1 AND "votes"."like" = $2[0m  [["video_id", 5], ["like", "f"]]
+  Rendered videos/_show.html.erb (32.8ms)
+  Rendered videos/index.html.erb within layouts/application (635.5ms)
+  Rendered videos/_form.html.erb (1.1ms)
+Completed 200 OK in 1049ms (Views: 530.5ms | ActiveRecord: 271.5ms)
+
+
+Started GET "/aaa?rel=0" for 127.0.0.1 at 2020-04-24 23:26:19 +0700
+Processing by ApplicationController#not_found as HTML
+  Parameters: {"rel"=>"0", "a"=>"aaa"}
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
