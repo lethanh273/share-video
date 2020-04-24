@@ -6,7 +6,7 @@
   </div>
   <div class="col-sm-5" data=<%= video.id %>>
     <h3>
-      <%= video.title || 'Missing title' %>
+      <%= 'Movie title' %>
       <%- if @current_user %>
         <span>
           <%- if video.like_by_user(@current_user) %>
@@ -27,6 +27,6 @@
         <i class="fa fa-thumbs-o-down" aria-hidden="true"><%= video.votes.dislike.size %></i>
       </span>
     </p>
-    <p> <%= video.desc || 'Missing description' %></p>
+    <p> <%= Description' %></p>
   </div>
 </div>
