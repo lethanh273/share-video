@@ -12,21 +12,24 @@
 
 ActiveRecord::Schema.define(version: 20191002144051) do
 
-  create_table "tokens", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=latin1" do |t|
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
+  create_table "tokens", force: :cascade do |t|
     t.string "token"
     t.integer "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
-  create_table "users", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=latin1" do |t|
+  create_table "users", force: :cascade do |t|
     t.string "username"
     t.string "password_digest"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
-  create_table "videos", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=latin1" do |t|
+  create_table "videos", force: :cascade do |t|
     t.string "youtube_url", default: ""
     t.integer "created_by"
     t.datetime "created_at", null: false
@@ -37,7 +40,7 @@ ActiveRecord::Schema.define(version: 20191002144051) do
     t.string "desc"
   end
 
-  create_table "votes", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=latin1" do |t|
+  create_table "votes", force: :cascade do |t|
     t.integer "user_id"
     t.integer "video_id"
     t.boolean "like", default: true
