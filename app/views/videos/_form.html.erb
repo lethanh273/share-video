@@ -1,0 +1,50 @@
+<form>
+
+  <div class="form-group">
+    <input type="text" class="form-control" id="youtubeTitle" placeholder="Title">
+  </div>
+
+  <div class="form-group">
+    <input type="text" class="form-control" id="youtubeDesc" placeholder="Description">
+  </div>
+
+  <div class="form-group">
+    <input type="url" class="form-control" id="youtubeUrl" placeholder="Insert Youtube URL">
+  </div>
+  <button type="button" class="btn btn-primary" id="shareYoutubeUrl">Share</button>
+</form>
+
+<script type="text/javascript" charset="utf-8">
+    $("#shareYoutubeUrl").on("click", () => {
+        $.ajax({
+            headers: {
+                'Authorization': `Bearer ${Cookies.get('access-token')}`
+            },
+            url: "/videos.json",
+            method: "post",
+            data: {
+                youtube_url: $("#youtubeUrl").val(),
+                title: $("#youtubeTitle").val(),
+                desc: $("#youtubeDesc").val(),
+            }
+        }).done(function (response) {
+            $('#insertVideoModal').modal('hide');
+            Swal.fire({
+                type: 'success',
+                title: 'successfully',
+                showConfirmButton: false,
+                timer: 500
+            })
+            location.reload(true)
+
+        }).fail(function () {
+            Swal.fire({
+                type: 'error',
+                title: 'unexpected error',
+                showConfirmButton: false,
+                timer: 500
+            })
+        })
+    })
+
+</script>

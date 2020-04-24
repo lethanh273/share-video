@@ -17,7 +17,7 @@ class UsersController < ApplicationController
 
   def create
     @user = User.new(user_params)
-    if @user
+    if @user.save!
       redirect_to auth_new_path
     else
       render json: {errors: @user.errors.full_messages},
